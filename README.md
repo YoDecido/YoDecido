@@ -23,3 +23,6 @@ A través de esta página buscamos que puedas informarte organizadamente de las 
 - Descargar el Proyecto y ubicarlo en su servidor
 - Modificar los archivos de la carpeta accesoDatos con la configuración de seguridad de su servidor
 
+<b>Autores </b>
+Campos Aquino Diego (@newoverflow), León Velasquez Carlos (@leon050591), Plaza Bustamante Angel (@plazat101), Mundaca Arriola Luis (@LuisMundaca30), Antón Chiclayo Rafael (@RafaelAnton_C)
+
