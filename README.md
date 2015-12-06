@@ -1,7 +1,7 @@
 # YoDecido 
 
 
-A través de esta página buscamos que puedas informarte organizadamente de las propuestas de los candidatos a la presidencia 2016, así como realizar denuncas de situaciones diversas que puedan ocurrir cerca a tí.
+A través de esta página buscamos que puedas informarte organizadamente de las propuestas de los candidatos a la presidencia 2016, así como realizar denuncias de irregularidades que ocurran en los procesos electorales.
 
 <b>Funciones de la aplicación:</b>
 
