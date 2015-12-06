@@ -15,4 +15,4 @@ A través de esta página buscamos que puedas informarte organizadamente de las 
 - MySQL
 - Bootstrap Material Design
 - Api Google Maps
-- ChartsJS
+- HighCharts
