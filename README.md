@@ -16,3 +16,10 @@ A través de esta página buscamos que puedas informarte organizadamente de las 
 - Bootstrap Material Design
 - Api Google Maps
 - HighCharts
+
+<b>Instalación </b>
+
+- Restaurar la base de datos con el script ubicado en la carpeta BD
+- Descargar el Proyecto y ubicarlo en su servidor
+- Modificar los archivos de la carpeta accesoDatos con la configuración de seguridad de su servidor
+
