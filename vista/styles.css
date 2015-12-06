@@ -1,0 +1,54 @@
+body {
+	margin-top:3%;
+	margin-left:5%;
+	background: #cccccc;
+}
+#info {
+	font-size: 18px;
+	background: #ffffff;
+	width: 350px;
+	border-radius: 6px;
+	text-align: center;
+	color: #666666;
+	border: solid 1px #666666;
+	margin: auto;
+	padding: 3px;
+
+}
+#enviar {
+	background: #fff;
+	font-size: 22px;
+	text-align: left;
+	color: #000;
+	margin: 10px 60px;
+	padding:3px 10px 3px 10px;
+	border-radius: 6px;
+}
+#respuesta {
+	margin: auto 60px;
+}
+#googleMap {
+	margin: 10px auto;
+	width:90%;
+	height:280px;
+	border: 2px solid #666666; 
+	border-radius: 6px;
+}
+#map {
+	margin: 10px auto;
+	width:90%;
+	height:280px;
+	border: 2px solid #666666; 
+	border-radius: 6px;
+}
+.titular {
+		background: #ffffff;
+		font-size: 32px;
+		color: #000;
+		margin: 40px auto;
+		text-align: center;
+		width: 50%;
+		padding:3px 10px 3px 10px;
+		border-radius: 6px;
+		border: solid 1px #999999;
+	}

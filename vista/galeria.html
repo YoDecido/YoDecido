@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="propuestaApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <link rel="shortcut icon" href="../css/images/ico.png">
+        <meta content="initial-scale=1.0, width=device-width" name="viewport">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <title>Yo Decido!</title>
+
+        <!-- css -->
+        <link href="../css/base.min.css" rel="stylesheet">
+
+        <!-- css for this project -->
+        <link href="../css/project.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body class="avoid-fout page-brand" ng-controller="mainController_2">
+        <div class="avoid-fout-indicator avoid-fout-indicator-fixed">
+            <div class="progress-circular progress-circular-center">
+                <div class="progress-circular-wrapper">
+                    <div class="progress-circular-inner">
+                        <div class="progress-circular-left">
+                            <div class="progress-circular-spinner"></div>
+                        </div>
+                        <div class="progress-circular-gap"></div>
+                        <div class="progress-circular-right">
+                            <div class="progress-circular-spinner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header header-transparent header-waterfall affix-top">
+            <ul class="nav nav-list pull-left">
+                <li>
+                    <a data-toggle="menu" href="#menu">
+                        <span class="icon icon-lg">menu</span>
+                    </a>
+                </li>
+            </ul>
+            <a class="header-logo margin-left-no" href="index.html">Yo Decido!</a>
+            <div class="header-affix pull-left affix-top" data-offset-top="108" data-spy="affix">
+                <span class="header-text margin-left-no">
+                    <i class="icon margin-right">chevron_right</i>Propuestas
+                </span>
+            </div>
+            <ul class="nav nav-list pull-right">
+                <li>
+                    <a data-toggle="menu" href="#profile">
+                        <span class="access-hide">John Smith</span>
+                        <span class="avatar"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <nav aria-hidden="true" class="menu menu-right" id="profile" tabindex="-1">
+            <div class="menu-scroll">
+                <div class="menu-top">
+                    <div class="menu-top-img">
+                        <img alt="John Smith" src="../images/samples/landscape.jpg">
+                    </div>
+                    <div class="menu-top-info">
+                        <a class="menu-top-user" href="javascript:void(0)"><span class="avatar pull-left"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>Yo Decido</a>
+                    </div>
+                    <div class="menu-top-info-sub">
+                        <small>Si te piden tu voto, exige transparencia</small>
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <ul class="nav">
+                        <li>
+                            <a class="waves-attach" href="javascript:void(0)"><span class="icon icon-lg">denuncia</span>Denuncia</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach" href="javascript:void(0)"><span class="icon icon-lg">add_to_photos</span>Planes de Gobierno</a>
+                        </li>
+                        <li>
+                            <a class="waves-attach" href="page-login.html"><span class="icon icon-lg">exit_to_app</span>Yo Informo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="content-heading" style="padding-bottom: 0">
+            </div>
+            <div class="container">
+                <div class="col-sm-12" style="padding: 0">
+                    <div class="card card-brand ">
+                        <aside class="card-side pull-right" style="padding-top: 25px">
+                            <span class="card-heading icon" style="margin: 0">info_outline</span>
+                        </aside>
+                        <div class="card-main">
+                            <div class="card-inner">
+                                <p class="card-heading">Galeria de Evidencias</p>
+                                <p><strong></strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-wrap" ng-repeat="foto in fotos">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card" style="box-shadow: 5px 5px 18px -5px rgba(0,0,0,0.75);">
+                                <div class="card-main">
+                                    <div class="card-header">
+                                        <h1 class="card-inner">{{foto.descripcion}}</h1>
+                                    </div>
+                                    <center>
+                                        <div class="card-inner">
+                                            <img src="../imagenesSubidas/{{foto.imgen}}" class="img-responsive">
+                                        </div>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>       
+
+        <footer class="footer">
+            <div class="container">
+                <p>#YoDecidoDAL</p>
+            </div>
+        </footer>
+        <div class="fbtn-container">
+            <div class="fbtn-inner">
+                <a class="fbtn fbtn-brand-accent fbtn-lg" data-toggle="dropdown"><span class="fbtn-text">Links</span><span class="fbtn-ori icon">add</span><span class="fbtn-sub icon">close</span></a>
+                <div class="fbtn-dropdown">
+                    <a class="fbtn" href="https://github.com/newoverflow/material" target="_blank"><span class="fbtn-text">Fork me on GitHub</span><span class="fa fa-github"></span></a>
+                    <a class="fbtn fbtn-blue" href="https://twitter.com/daemonites" target="_blank"><span class="fbtn-text">Follow Daemon on Twitter</span><span class="fa fa-twitter"></span></a>
+                    <a class="fbtn fbtn-alt" href="http://www.daemon.com.au/" target="_blank"><span class="fbtn-text">Visit Daemon Website</span><span class="icon">link</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script type="text/javascript">
+                                                    function load() {
+                                                        var map = new google.maps.Map(document.getElementById("map"), {
+                                                            center: new google.maps.LatLng(-6.771618, -79.838680),
+                                                            zoom: 12,
+                                                            mapTypeId: 'roadmap'
+                                                        });
+
+                                                        var infoWindow = new google.maps.InfoWindow;
+
+                                                        downloadUrl("markers.php", function (data) {
+                                                            var xml = data.responseXML;
+                                                            var markers = xml.documentElement.getElementsByTagName("marker");
+
+                                                            for (var i = 0; i < markers.length; i++) {
+                                                                var point = new google.maps.LatLng(
+                                                                        parseFloat(markers[i].getAttribute("lat")),
+                                                                        parseFloat(markers[i].getAttribute("lng")));
+                                                                var icon = 'marker' + markers[i].getAttribute("tipoD") + '.png';
+                                                                var marker = new google.maps.Marker({
+                                                                    map: map,
+                                                                    position: point,
+                                                                    icon: icon,
+                                                                    title: "" + markers[i].getAttribute("descripcion") + ""
+                                                                });
+                                                            }
+                                                        });
+                                                    }
+                                                    function downloadUrl(url, callback) {
+                                                        var request = window.ActiveXObject ?
+                                                                new ActiveXObject('Microsoft.XMLHTTP') :
+                                                                new XMLHttpRequest;
+                                                        request.onreadystatechange = function () {
+                                                            if (request.readyState == 4) {
+                                                                request.onreadystatechange = doNothing;
+                                                                callback(request, request.status);
+                                                            }
+                                                        };
+                                                        request.open('GET', url, true);
+                                                        request.send(null);
+                                                    }
+
+                                                    function doNothing() {
+                                                    }
+        </script>       
+
+        <script src="../jsC/highcharts.js"></script>
+        <script src="../jsC/highcharts-more.js"></script>
+        <script src="../jsC/modules/exporting.js"></script>          
+
+        <script src="../js/base.min.js"></script>
+        <script src="../js/project.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="../js/Controllers/propuestasCtrl.js"></script>
+    </body>
+</html>
