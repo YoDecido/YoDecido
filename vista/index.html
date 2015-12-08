@@ -68,9 +68,15 @@
             }
         </style>
 
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   
-
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+        </script>   
+        <script>
+        var script = '<script type="text/javascript" src="../js/markerclusterer_compiled';
+        script += '.js"><' + '/script>';
+        document.write(script);
+        </script>
         <script type="text/javascript">
+            var markerss = [];
             function load() {
                 var map = new google.maps.Map(document.getElementById("map"), {
                     center: new google.maps.LatLng(-6.771618, -79.838680),
@@ -83,6 +89,7 @@
                 downloadUrl("markers.php", function (data) {
                     var xml = data.responseXML;
                     var markers = xml.documentElement.getElementsByTagName("marker");
+                    markerss = [];
                     for (var i = 0; i < markers.length; i++) {
                         var point = new google.maps.LatLng(
                                 parseFloat(markers[i].getAttribute("lat")),
@@ -94,7 +101,10 @@
                             icon: icon,
                             title: markers[i].getAttribute("descripcion")
                         });
+                        markerss.push(marker);
                     }
+                     var markerCluster = new MarkerClusterer(map, markerss);
+                     markerCluster.setMaxZoom(13);
                 });
             }
             function downloadUrl(url, callback) {
